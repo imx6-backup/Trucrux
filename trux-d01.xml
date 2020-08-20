@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+ <remote fetch="https://github.com/trucrux" name="trucrux" />
+
+  <project remote="trucrux" revision="ceb3ec68029e5b34dc006beda89e7f7ca3b840cf" name="poky" path="sources/poky"/>
+  
+  <project remote="trucrux" revision="be78894e4682f111575470fb23e51e6ba523508d" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+  
+  <project remote="trucrux" revision="247b1267bbe95719cd4877d2d3cfbaf2a2f4865a" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="trucrux" revision="3f3f63f5dd6bc62cbe7ea8ba779a07754bec4584" name="fsl-community-bsp-base" path="sources/base">
+       <copyfile dest="README" src="README"/>
+       <copyfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="trucrux" revision="3dfb82fc7e703eae9891b3ffda0e9393701f2396" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="trucrux" revision="a165068f8a0d1cf29aabe4b4053f28be1c2aa492" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+
+  <project remote="trucrux" revision="77736988073a5d90fcff9d0005c8477332ede387" name="meta-browser" path="sources/meta-browser" />
+  <project remote="trucrux" revision="ccae79be69c5268df3b47e4e14cea0591c39a531" name="meta-qt5" path="sources/meta-qt5" />
+
+  <project remote="trucrux" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="trux-d01" >
+     <copyfile src="imx/tools/trucrux-setup-release.sh" dest="trucrux-setup-release.sh"/>
+     <copyfile src="imx/README" dest="README-IMXBSP"/>
+  </project>
+  
+  <project remote="trucrux" revision="trux-d01" name="meta-trucrux" path="sources/meta-trucrux" />
+ 
+</manifest>
