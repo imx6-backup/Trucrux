@@ -3,7 +3,7 @@
 
   <default sync-j="2"/>
 
- <remote fetch="https://github.com/trucrux" name="trucrux" />
+ <remote fetch="https://github.com/imx6-backup/trucrux" name="trucrux" />
 
   <project remote="trucrux" revision="ceb3ec68029e5b34dc006beda89e7f7ca3b840cf" name="poky" path="sources/poky"/>
   
